@@ -33,15 +33,22 @@
             <input type="button" value="window.open" onclick="window.open('https://ayumu-nishimura.github.io/test/transitionB.html', '任意のウィンドウ名称','width=1300,height=800'); return false;">新規ウィンドウで開きます（inputタグに『 window.open 』）
         </div>
         <hr>
-        <h1>formタグ</h1>
+        <h1>formタグ - type="submit"タグ</h1>
         <div>
+            <form action="https://ayumu-nishimura.github.io/test/transitionB.html" method="get" target="_blank">
+                <input type="submit" value="targetBlankあり get">
+            </form>
             <form action="https://ayumu-nishimura.github.io/test/transitionB.html" method="post" target="_blank">
-                <input type="submit" value="input type=submit target blank あり">
+                <input type="submit" value="targetBlankあり post">
             </form>
         </div>
+        <h1>formタグ - aタグ</h1>
         <div>
-            <form method="post" action="https://yahoo.co.jp" name="sidebar_form" onsubmit="return false;" target="_blank">
-                    <a href="javascript:void(0);" onclick="document.sidebar_form.submit();">form targetあり submit<br></a>
+            <form method="get" action="https://ayumu-nishimura.github.io/test/transitionB.html" name="sidebar_form" onsubmit="return false;" target="_blank">
+                <a href="javascript:void(0);" onclick="document.sidebar_form.submit();">targetBlankあり get</a>
+            </form>
+            <form method="post" action="https://ayumu-nishimura.github.io/test/transitionB.html" name="sidebar_form" onsubmit="return false;" target="_blank">
+                <a href="javascript:void(0);" onclick="document.sidebar_form.submit();">targetBlankあり post</a>
             </form>
         </div>
     </div>
