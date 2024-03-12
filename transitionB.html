@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<body>
+  <input type="button" onclick="window.close();" value="閉じる（onclick=window.close()）">
+  <br>
+  <hr>
+  <br>
+  <input type="button" onclick="window.open('','_self').close();" value="閉じる（onclick=window.open('','_self').close()）">
+  <br>
+  <p>window.openは本来、新しいページ（ブラウザでいう新しいタブ）を開くためのメソッドですが、このメソッドを利用して、window.closeに対応していないブラウザでもタブを閉じることができます。</p>
+  <a href="https://www.sejuku.net/blog/50292">参考サイト</a>
+</body>
+</html>
